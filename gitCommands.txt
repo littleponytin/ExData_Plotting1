@@ -1,3 +1,39 @@
 To clone from online to local:
 
-git clone git://github.com/littleponytin/Getting-and-Cleaning-Data.git
+git clone https://github.com/littleponytin/Getting-and-Cleaning-Data.git
+
+Push files from local to github:
+
+git add .
+
+This adds in all of your files & changes so far to a staging area.
+
+Then type:
+
+git commit -m "first commit"
+
+Next type:
+
+git remote add origin https://github.com/littleponytin/Getting-and-Cleaning-Data.git
+
+Your GitHub Repository page will list the repository URL, so feel free to copy and paste from there, rather than typing it in manually. You can copy and paste the link from your GitHub repository page by clicking the clipboard icon next to the URL.
+
+This creates a remote, or connection, named “origin” pointing at the GitHub repository you just created.
+
+Then type:
+
+git push -u origin master
+
+This sends your commits in your “master” branch to GitHub
+
+git add .
+
+git commit -m "submit assignment with README"
+
+git push origin master
+
+>>> got error, do this
+
+git remote rm origin
+git remote add origin git://github.com/littleponytin/Getting-and-Cleaning-Data.git
+git push origin master
